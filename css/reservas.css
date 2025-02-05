@@ -1,0 +1,103 @@
+.reservas-container {
+    background-color: rgba(249, 249, 249, 0.97); /* Cambia el valor de opacidad */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 25px; /* Ajusta el padding para hacer el contenedor un poco más pequeño */
+    margin: auto;
+    width: 85%; /* Reducimos el ancho del contenedor */
+    max-width: 750px; /* Ajustamos el ancho máximo del contenedor */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Para que esté encima del video */
+}
+/* Estilos para el resto del contenedor omitidos por brevedad */
+
+video {
+    width: 100%;
+    height: auto;
+    position: relative; /* Asegura que otros elementos se puedan colocar encima */
+    z-index: 0; /* Para que esté detrás del contenedor de reservas */
+}
+
+.reservas-container h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+
+.reservas-container hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+    width: 85%; 
+    margin: 0 auto 20px;
+}
+
+.contenedor2 {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Espacia uniformemente los elementos */
+}
+
+.columna2 {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    position: relative;
+    margin: 0 10px; /* Añade margen a los lados */
+}
+
+.columna2 p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+select,
+input[type="date"],
+input[type="time"],
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e8f0f8; /* Cambia el color de fondo */
+    color: #000;
+    border: 1px solid #ccc; /* Cambia el color del borde */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+select:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+button:focus {
+    outline: none;
+    border-color: #007bff; /* Cambia el color del borde cuando está enfocado */
+    border-width: 2px;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.columna2:last-child button {
+    width: 80px; /* Reducimos el ancho del botón */
+    margin-top: 45px; /* Incrementamos el margen superior para ajustar la posición vertical */
+    margin-right: auto; /* Alineamos el botón a la derecha del contenedor */
+}
+
+

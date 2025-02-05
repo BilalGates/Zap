@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Estilos para la tabla */
+.table {
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    position: relative;
+}
+
+/* Estilos para el título de la tabla */
+.table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces de cancelar */
+.cancelar {
+    position: absolute;
+    top: 0;
+    left: -120px; /* Ajusta este valor para mover el botón más a la izquierda */
+}
+
+.cancelar a {
+    display: inline-block;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 3px 13px;
+    margin-top: 38px; /* Ajusta este valor para alinear el botón con el h2 */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cancelar a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la tabla */
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para las celdas de la tabla */
+.table table td, .table table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Estilos para los encabezados de la tabla */
+.table table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Estilos para el pie de página fijado */
+footer {
+    width: 100%;
+    z-index: 1000; 
+    align-items: center;
+}

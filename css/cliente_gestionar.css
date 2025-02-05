@@ -1,0 +1,162 @@
+/*TARGETAS EN LINIA*/
+
+
+.perfil, .billetes, .plan {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 4 - 10px);
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/*PERFIL*/
+.perfil h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.perfil p {
+    font-size: 16px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+
+.perfil a {
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.perfil a:hover {
+    background-color: #0056b3;
+}
+
+.perfil .modificar-perfil {
+    margin-top: 20px;
+}
+
+/*BILLETES*/
+.billetes h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.billetes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.billetes li {
+    margin: 20px 0;
+}
+
+.billetes .info-billete {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #000;
+}
+.billetes p {
+    font-size: 16px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+.billetes a {
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.billetes a:hover {
+    background-color: #b30000;
+}
+
+/* Botón de eliminar billete */
+.billetes .eliminar-billete {
+    margin-top: 28px; /* Alinea el botón en la parte inferior */
+}
+
+
+/*PLAN*/
+.plan h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 16px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan li {
+    margin: 20px 0;
+}
+
+.plan .info-billete {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.plan a {
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.plan a:hover {
+    background-color: #b30000;
+}
+
+.plan .cancelar-plan {
+    margin-top: 94px;
+}
+
+/*ELIMINAR CUENTA*/
+.cuenta a {
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cuenta a:hover {
+    background-color: #cc0000;
+}

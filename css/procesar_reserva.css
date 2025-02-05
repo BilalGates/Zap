@@ -1,0 +1,87 @@
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: #0056b3;
+}
+
+.tickets-container {
+    display: flex;
+    flex-direction: column; /* Cambiado a una sola columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.ticket {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reducido el padding */
+    margin: 15px 0; /* Reducido el margen entre tarjetas */
+    width: 450px; /* Se han alargado las tarjetas */
+    transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+    transform: translateY(-3px);
+}
+
+.ticket-title {
+    margin-top: 0;
+    font-size: 16px; /* Reducido el tamaño de fuente */
+    color: #333;
+    text-align: center;
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px; /* Separación entre elementos */
+}
+
+.ticket-info p {
+    margin: 0; /* Eliminar el margen vertical */
+    font-size: 14px; /* Tamaño de fuente reducido */
+    color: #666;
+}
+
+.reservar-btn {
+    display: block;
+    width: 100%;
+    padding: 8px 0; /* Reducido el padding */
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.reservar-btn:hover {
+    background-color: #0056b3;
+}

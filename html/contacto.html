@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@200&family=Kanit:wght@200&family=Sulphur+Point:wght@700&display=swap" rel="stylesheet">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/php.css">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="shortcut icon" href="../img/icon.png" />
+        
+        <title>ZAP · Contactanos</title>
+    </head>
+    <body>
+
+        <header>
+        <div class="contenedor">
+            <div class="columna"><a href="../html/servicios.html" id="nave">SERVICIOS</a></div>
+                <div class="columna"><a href="../html/destinos.html" id="nave">DESTINOS</a></div>
+                <div class="columna">
+                    <a href="../html/index.html">
+                        <img src="../img/logo3.png" alt="Logo de Zap" id="logo">
+                    </a>
+                </div>
+                <div class="columna"><a href="../html/suscribe.html" id="nave">SUSCRIBETE</a></div>
+                <div class="columna"><a href="../html/login.html" id="nave">INICIAR SESIÓN</a></div>
+            </div>
+        </header>
+
+        <section class="form" id="contacto">
+            <h2>Contacto</h2>
+            <form action="../php/procesar_contacto.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit" method="post">Enviar</button>
+            </form>
+        </section>
+        <br>
+        <br>
+        <br>
+        
+        <footer>
+            <div class="contenedor">
+                <div class="columna">
+                    <img src="../img/logo3.png" alt="old logo" id="logo">
+                </div>
+                <div class="columna">
+                    <a href="../html/privacidad.html">Aviso Legal y Política de Privacidad</a><br>
+                    <a href="#terminos">Términos y Condiciones</a><br>
+                    <a href="#terminos">Política de Cookies</a><br>
+                </div>
+                <div class="columna">
+                    <p>
+                        <a href="../html/contacto.html">Contactanos</a>
+                    </p>
+                    <p>
+                        <a href="https://sites.google.com/bemen3.cat/ipopmorentemarc?usp=sharing">Marc Morente López</a><br>
+                        <u><a class="texto-editable" contenteditable="false" onclick="seleccionarTexto()">mamolo22@bemen3.cat</a></u>                          
+                    </p>
+                    <p>
+                        <a href="https://sites.google.com/bemen3.cat/ipopelarbibilal?usp=sharing">Bilal el Arbi Ouriach</a><br>
+                        <u><a class="texto-editable" contenteditable="false" onclick="seleccionarTexto()">bielou22@bemen3.cat</a></u>
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="columna">
+                    <a href="https://maps.app.goo.gl/SA1Z652ZtnRfmTXx7">Av. Diagonal, 403, 08008 Barcelona</a>
+                </div>
+            </div>
+            <br>
+            © Zap Rails Corporation 2022 - 2024
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../scripts/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/carousel.js"></script>
+    <script src="../scripts/copiar.js"></script>
+</html>

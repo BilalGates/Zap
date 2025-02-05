@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilos para el contenedor del formulario */
+.form {
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Margen superior e inferior */
+    margin-bottom: 20px; /* Aumentar el margen inferior */
+    position: relative;
+}
+
+/* Estilos para el título del formulario */
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas del formulario */
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estilos para los campos de texto y fecha del formulario */
+.form input[type="text"],
+.form input[type="user"],
+.form input[type="password"],
+.form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+/* Estilos para los campos de entrada de correo electrónico y mensaje */
+.form input[type="text"],
+.form input[type="user"],
+.form input[type="password"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 10px; /* Añade un margen inferior para separar los elementos */
+}
+
+/* Estilos para el botón de envío del formulario */
+.form input[type="submit"],
+button {
+    font-family: Cabin,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% + 20px); /* Aumenta el ancho del botón */
+}
+
+/* Estilos para el botón de envío del formulario al pasar el cursor sobre él */
+.form input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+}
+
+.form .error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.form .success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Estilos para las etiquetas del formulario */
+.form label {
+    display: block;
+    margin-bottom: 5px; /* Reducir el margen inferior */
+    text-align: left;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px 20px;
+    width: calc(100% - 20px); /* Aumenta el ancho del botón */
+}
+
+/* Estilos para ajustar el formulario en dispositivos móviles */
+@media (max-width: 600px) {
+    .form {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cancelar {
+        position: relative;
+        left: unset;
+        top: unset;
+        margin-top: 10px; /* Ajusta según sea necesario */
+    }
+}
+
+/* Estilos para el pie de página fijado */
+footer {
+    width: 100%;
+    z-index: 1000; 
+}

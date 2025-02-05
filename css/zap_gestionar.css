@@ -1,0 +1,58 @@
+.titulo h2{
+    margin: 50px auto;
+}
+
+/*TARGETAS EN LINIA*/
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilos generales para todas las secciones */
+.modificar, .insertar, .eliminar, .consultar {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 4 - 80px); /* Ajusta el ancho para acomodar 4 elementos */
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 25px;
+}
+
+/* Estilos para los encabezados */
+.modificar h2, .insertar h2, .eliminar h2, .consultar h2 {
+    color: #000000; /* Color del encabezado negro */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces */
+.modificar a, .insertar a, .eliminar a, .consultar a {
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos al pasar el mouse sobre los enlaces */
+.modificar a:hover, .insertar a:hover, .eliminar a:hover, .consultar a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    .modificar, .insertar, .eliminar, .consultar {
+        width: 100%; /* Ajusta el ancho para acomodar 1 elemento */
+    }
+}

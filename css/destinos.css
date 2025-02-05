@@ -1,0 +1,89 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destinos h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Estilos específicos para el carousel */
+.destinos {
+    position: relative;
+    text-align: center; 
+}
+
+.images {
+    width: 1200px;
+    height: 380px;
+    margin: 0 auto; 
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide h3 {
+    position: absolute;
+    left: 20px;
+    bottom: -35px;
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #000000; /* Agrega un relieve negro */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rows {
+    width: 170px;
+    margin: 0 auto; 
+    position: relative;
+    bottom: -25px; 
+    margin-bottom: 30px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    font-size: 15px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+    left: 50px; /* Mantén el valor de izquierda al 50% para centrar horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+.swiper-button-next {
+    right: 50px; /* Mantén el valor de derecha al 50% para centrar horizontalmente */
+    transform: translateX(50%); /* Centra horizontalmente */
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 25px;
+    color: #000000;
+}
